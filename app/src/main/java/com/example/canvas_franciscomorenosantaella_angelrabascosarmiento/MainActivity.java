@@ -109,8 +109,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void colorCola(View view){
+
         mp3.setVolume(0.2f,0.2f);
         mp3.start();
+        cantidad = 0;
         bebida = Color.rgb	(111,23,18);
         Vista vista = new Vista(this);
         this.canvasLayout.removeAllViews();
@@ -119,6 +121,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void colorVino(View view){
         mp4.start();
+        cantidad = 0;
         bebida = Color.rgb(80, 19, 86);
         Vista vista = new Vista(this);
         this.canvasLayout.removeAllViews();
@@ -127,6 +130,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void colorWater(View view){
         mp5.start();
+        cantidad = 0;
         bebida = Color.CYAN;
         Vista vista = new Vista(this);
         this.canvasLayout.removeAllViews();
